@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon.png" type="image/png">
+    <title>Prathamesh - CS & AI Engineer</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Three.js for 3D animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Prathamesh</div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#patents" class="nav-link">Patents</a></li>
+                <li><a href="#research" class="nav-link">Research</a></li>
+                <li><a href="#certificates" class="nav-link">Certificates</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-name">Prathamesh Jorve</h1>
+                <p class="hero-tagline">Computer Science & AI Engineer</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Contact</a>
+                </div>
+            </div>
+            <div class="hero-3d">
+                <div id="cube-container"></div>
+            </div>
+        </div>
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-avatar">
+                    <img src="/Profile_Picture.png" alt="Prathamesh Avatar" class="avatar-img">
+                    <div class="floating-icons">
+                        <i class="fas fa-code icon-float"></i>
+                        <i class="fas fa-brain icon-float"></i>
+                        <i class="fas fa-robot icon-float"></i>
+                        <i class="fas fa-microchip icon-float"></i>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <div class="about-card">
+                        <p>Hello! I'm Prathamesh, a passionate Computer Science and AI Engineer dedicated to pushing the boundaries of technology. With expertise spanning from traditional programming to cutting-edge artificial intelligence, I thrive on solving complex problems and building innovative solutions.</p>
+                        <p>My journey in tech has led me to explore various domains including machine learning, deep learning, and generative AI. I believe in the power of technology to transform lives and am constantly learning and adapting to stay at the forefront of innovation.</p>
+                        <p>When I'm not coding, you'll find me exploring new AI models, contributing to open-source projects, or sharing knowledge with the tech community.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+<!-- Skills Section -->
+<section id="skills" class="skills">
+    <div class="container">
+        <h2 class="section-title">Skills & Technologies</h2>
+        <div class="skills-grid">
+
+            <!-- Programming & Tech Skills -->
+            <div class="skill-card">
+                <i class="fab fa-python skill-icon"></i>
+                <h3>Python</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fas fa-code skill-icon"></i>
+                <h3>C++</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fab fa-html5 skill-icon"></i>
+                <h3>HTML / CSS / JavaScript</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fas fa-database skill-icon"></i>
+                <h3>MongoDB</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fas fa-database skill-icon"></i>
+                <h3>DBMS / MySQL</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fas fa-brain skill-icon"></i>
+                <h3>Machine Learning</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fas fa-project-diagram skill-icon"></i>
+                <h3>Deep Learning</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fas fa-robot skill-icon"></i>
+                <h3>Generative AI</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fas fa-comments skill-icon"></i>
+                <h3>Prompt Engineering</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fab fa-git-alt skill-icon"></i>
+                <h3>Git & GitHub</h3>
+            </div>
+
+            <!-- Creative Skills (Placed Last) -->
+            <div class="skill-card">
+                <i class="fas fa-video skill-icon"></i>
+                <h3>Video Editor</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fas fa-pen-nib skill-icon"></i>
+                <h3>Content Creator</h3>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/dipex_25.jpg" alt="Wireless EV Charging System - DIPEX 2025">
+                    </div>
+                    <div class="project-content">
+                        <h3>Wireless EV Charging System</h3>
+                        <p>A fully functional wireless AC/DC charging prototype developed for DIPEX 2025. 
+            Focused on coil design, power electronics, and efficient wireless energy transfer 
+            for electric vehicle battery charging.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">IoT</span>
+                            <span class="tech-tag">Wireless technology</span>
+                            <span class="tech-tag">Power Electronics</span>
+                        </div>
+                        <a href="https://github.com" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/sleep_detection.jpeg" alt="Sleep Detection System">
+                    </div>
+                    <div class="project-content">
+                        <h3>Sleep / Drowsiness Detection System</h3>
+                        <p>A real-time drowsiness and sleep detection system built using computer vision. 
+            The system analyzes eye blink rate and facial movements to detect fatigue, 
+            microsleep, and drowsiness. Ideal for driver safety and monitoring applications.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Computer Vision</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">ML Model</span>
+                            <span class="tech-tag">Drowsiness Detection</span>
+                        </div>
+                        <a href="https://github.com" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./assets/project-face-emotion.jpg" alt="Face Emotion Recognition App">
+                    </div>
+                    <div class="project-content">
+                        <h3>Face Emotion Recognition App</h3>
+                        <p>Real-time emotion detection system using deep learning. Analyzes facial expressions to identify emotions with high accuracy for various applications.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Deep Learning</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">TensorFlow</span>
+                        </div>
+                        <a href="https://github.com" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./assets/project-portfolio-v1.jpg" alt="Portfolio Website v1">
+                    </div>
+                    <div class="project-content">
+                        <h3>Portfolio Website v1</h3>
+                        <p>First iteration of my personal portfolio website. Features modern design, smooth animations, and responsive layout showcasing my work and skills.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <a href="https://github.com" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Patents Section -->
+    <section id="patents" class="patents">
+        <div class="container">
+            <h2 class="section-title">Patents & Innovations</h2>
+            <p class="section-subtitle">Intellectual property and innovative solutions</p>
+            <div class="patents-grid">
+                <div class="patent-card">
+                    <div class="patent-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <img src="/wireless_petent.jpg" alt="Wireless EV Charging Patent">
+                    <div class="patent-overlay">
+                        <h3>Wireless Electric Vehicle Charging System</h3>
+                        <p>Patent Number: US-XXXXXXX</p>
+                        <p class="patent-desc">A wireless EV charging innovation developed for DIPEX 2025. 
+            The system focuses on long-distance power transfer, improved 
+            coil alignment, and safe AC/DC conversion for electric vehicles. 
+            Patent documentation has been officially submitted for review.</p>
+                    </div>
+                </div>
+                <div class="patent-card">
+                    <div class="patent-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <img src="./assets/patent-placeholder-2.jpg" alt="Patent 2">
+                    <div class="patent-overlay">
+                        <h3>Patent Title</h3>
+                        <p>Patent Number: US-XXXXXXX</p>
+                        <p class="patent-desc">Replace with your patent details</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Papers Section -->
+    <section id="research" class="research">
+        <div class="container">
+            <h2 class="section-title">Research Papers</h2>
+            <p class="section-subtitle">Published research and academic contributions</p>
+            <div class="research-grid">
+                <div class="research-card">
+                    <div class="research-image">
+                        <img src="/Research_paper1.jpg" alt="Research Paper - Smart Emergency Backup Charging System">
+    </div>
+                    </div>
+                    <div class="research-content">
+                        <h3>Design and Implementation of a Smart Emergency Backup Charging System for Large Electric Vehicles Using IoT and High-Power DC-DC Converters</h3>
+                        <p class="research-authors">Authors: Prathamesh Jorve, Department of Mechatronics, Sanjivani K.B.P Polytechnic, Kopargaon</p>
+                        <p class="research-desc">Published in the International Journal of Innovative Research in Science, Engineering and Technology (IJIRSET). 
+            This research presents a smart emergency backup charging system designed for large electric vehicles using IoT-based 
+            control and high-power DC-DC converters to ensure efficient and reliable energy delivery during critical situations.</p>
+                        <div class="research-meta">
+                            <span class="research-tag">IoT</span>
+                            <span class="research-tag">Power Electronics</span>
+                            <span class="research-tag">IJIRSET 2025</span>
+                        </div>
+                        <a href="#" target="_blank" class="research-link">
+                            <i class="fas fa-file-pdf"></i> Read Paper
+                        </a>
+                    </div>
+                </div>
+                <!-- <div class="research-card">
+                    <div class="research-image">
+                        <img src="./assets/research-paper-2.jpg" alt="Research Paper 2">
+                    </div>
+                    <div class="research-content">
+                        <h3>Research Paper Title</h3>
+                        <p class="research-authors">Authors: Prathamesh et al.</p>
+                        <p class="research-desc">Brief description of your research paper. Replace with actual abstract or summary of your published work.</p>
+                        <div class="research-meta">
+                            <span class="research-tag">Deep Learning</span>
+                            <span class="research-tag">2024</span>
+                        </div>
+                        <a href="#" target="_blank" class="research-link">
+                            <i class="fas fa-file-pdf"></i> Read Paper
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Certificates Section -->
+  <section id="certificates" class="certificates">
+  <div class="container">
+    <h2 class="section-title">Certificates & Achievements</h2>
+    <p class="section-subtitle">Professional certifications and recognitions</p>
+
+    <div class="certificates-grid">
+
+      <div class="certificate-card">
+        <a href="/dipexcerti.jpg" target="_blank" rel="noopener">
+          <img src="/dipexcerti.jpg" alt="DIPEX Participation Certificate">
+        </a>
+        <div class="certificate-overlay">
+          <h4>DIPEX 2025 — Participation</h4>
+          <p>State-level participation certificate for DIPEX 2025 (working model exhibition).</p>
+        </div>
+      </div>
+
+      <div class="certificate-card">
+        <a href="/dipexround1.jpg" target="_blank" rel="noopener">
+          <img src="/dipexround1.jpg" alt="DIPEX Idea Presentation Certificate">
+        </a>
+        <div class="certificate-overlay">
+          <h4>DIPEX — Idea Presentation (Ahilyanagar & Nashik)</h4>
+          <p>Certificate for Idea Presentation Round in DIPEX-2025 — showcased the project 'Chakra-Volt'.</p>
+        </div>
+      </div>
+
+      <div class="certificate-card">
+        <a href="/facultytrainign.jpg" target="_blank" rel="noopener">
+          <img src="/facultytrainign.jpg" alt="Faculty Training Certificate">
+        </a>
+        <div class="certificate-overlay">
+          <h4>Certificate of Appreciation — Trainer</h4>
+          <p>Recognized for delivering Digital Literacy training to non-teaching faculty at Sanjivani Group.</p>
+        </div>
+      </div>
+
+      <div class="certificate-card">
+        <a href="/handsontraning.jpg" target="_blank" rel="noopener">
+          <img src="/handsontraning.jpg" alt="Hands-on Arduino / IoT Training">
+        </a>
+        <div class="certificate-overlay">
+          <h4>Hands-on Workshop — Arduino & IoT</h4>
+          <p>Completed 4-day workshop on Arduino programming, sensors, hardware interfacing and IoT.</p>
+        </div>
+      </div>
+
+      <div class="certificate-card">
+        <a href="/internship.jpg" target="_blank" rel="noopener">
+          <img src="/internship.jpg" alt="Internship Certificate">
+        </a>
+        <div class="certificate-overlay">
+          <h4>Internship — Clickr Services Pvt Ltd</h4>
+          <p>Internship completion certificate — practical experience in development tasks and projects.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Let's connect and create something amazing together</p>
+
+        <div class="contact-content">
+
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+
+            <div class="social-links">
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/prathamesh-jorve/" 
+                   target="_blank" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+                <!-- GitHub -->
+                <a href="https://github.com/Prathameshjorve" 
+                   target="_blank" class="social-link" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/prathameshjorve/" 
+                   target="_blank" class="social-link" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <!-- Email -->
+                <a href="mailto:prathameshjorve09@gmail.com" 
+                   class="social-link" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Prathamesh. All rights reserved.</p>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="module" src="./script.js"></script>
+</body>
+
+</html>
