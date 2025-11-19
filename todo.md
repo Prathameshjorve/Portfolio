@@ -32,3 +32,6 @@
 - Vanilla JavaScript
 - Three.js (for 3D cube)
 - Font Awesome (for icons)
+
+  and finally its done that set for today
+  
